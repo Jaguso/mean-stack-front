@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 // Angular material imports
 import { 
@@ -44,6 +45,8 @@ const routes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(routes),
+    HttpClientModule,
+    ReactiveFormsModule,
     MatToolbarModule,
     MatFormFieldModule,
     MatInputModule,
@@ -54,8 +57,7 @@ const routes: Routes = [
     MatCardModule,
     MatTableModule,
     MatDividerModule,
-    MatSnackBarModule,
-    HttpClientModule
+    MatSnackBarModule
   ],
   providers: [IssueService],
   bootstrap: [AppComponent]
