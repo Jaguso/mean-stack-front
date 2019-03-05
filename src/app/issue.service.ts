@@ -14,4 +14,7 @@ export class IssueService {
     return this.http.get(`${this.uri}/issues`);
   }
 
+  getIssueById(id) {
+    return this.http.get(`${this.uri}/issues/${id}`);
+  }
 }
