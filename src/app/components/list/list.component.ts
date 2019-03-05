@@ -37,6 +37,7 @@ export class ListComponent implements OnInit {
       });
   }
 
+  // next two are event handler methods
   editIssue(id) {
     this.router.navigate([`/edit/${id}`]);
   }
